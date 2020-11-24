@@ -1,0 +1,1174 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*
+{
+	font-family: 'Raleway', "Sans serif";
+}
+
+/* -Taille du site*/
+
+body{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+/* -En tete-*/
+
+header{
+    display: flex; /* flexibilité des positions de */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    margin: 0px 50px 30px 40px;
+}
+
+.navigation{
+    margin-left: auto;
+}
+
+.nav_elt{
+    padding: 0px 40px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav_elt:hover{
+    padding: 51px 40px 0px 40px;
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+
+.inscription {
+    color: #0065FC;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 30px;
+}
+
+
+/* -Main-*/
+
+
+.main{
+    margin: 0px 50px;
+}
+
+/* -Sous titre-*/
+
+.trouvez h1{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.trouvez p{
+    margin-top: 10px;
+}
+
+
+/* -Barre de recherche-*/
+
+
+.BoutonRech {
+    display: flex;
+    margin: 20px 0px 0px 0px;
+    height: 50px;
+}
+
+.icone_position{
+    background-color: #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+    width: 50px;
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    padding-top: 15px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.inprech {
+    border: 1px solid #f2f2f2;
+    width: 235px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.inprech::placeholder{
+    font-weight: bold;
+    color:#000000;
+    padding-left: 5px;
+    font-size: 17px;
+}
+
+.Bouton1{
+    background-color: #0065fc;
+    color: #ffffff;
+    border-radius: 0px 15px 15px 0px;
+    text-align: center;
+    width: 135px;
+    border: 1px solid #0065fc;
+    cursor: pointer;
+}
+
+.rechercher{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.loupe{
+    display: none;
+}
+
+
+/*--Filtres--*/
+
+
+.Filtres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 950px;
+    margin: 30px 0px 0px 0px;
+}
+
+.titre_filtres{
+    margin: 15px 30px 20px 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bouton_filtres {
+    display: flex;
+    margin: 0px 20px 15px 0px;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-radius: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.icone_filtres{
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 100%;
+    width: 50px;
+    border: 0px solid #deebff;
+    padding-top: 17px;
+    cursor: pointer;
+    margin: -2px;
+    z-index: 2;
+}
+
+.Droite_filtres{
+    padding: 0px 15px 0px 16px;
+    border: 3px none #f2f2f2;
+    border-radius: 0px 50px 50px 0px;
+    text-align: center;
+    cursor: pointer;
+    background-color: inherit;
+    z-index: 1;
+}
+
+.texte_filtres{
+    color:black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bouton_filtres:hover{
+    background-color: #a7d3f7ef;
+    margin: 0px 20px 15px 0px;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-radius: 40px;
+    text-align: center;
+}
+
+
+/*--Informations--*/
+
+.infos {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0px 30px 10px;
+}
+
+.icone_infos {
+    border: 2px solid #f2f2f2;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.icone_infos i {
+    color: #0065fc;
+    font-size: 12px;
+}
+
+.texte_infos{
+    margin-left: 10px;
+    padding-top: 2px;
+    font-size: 16px;
+}
+
+
+/*--Hebergements marseille*/
+
+
+#heberg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.heberg_titre{
+    margin: 33px 0px 25px 20px;
+    font-size: 23px;
+}
+
+.heberg_marseille{
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    max-width: 846px;
+    padding: 10px 17px;
+    margin-right: 10px;
+}
+
+.heberg_bloc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.heberg_hotel{
+    padding: 5px;
+    box-shadow: 0 0 20px #0000002e;
+    width: 28%;
+    height: 190px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin: 0px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+}
+
+.heberg_hotel img{
+    height: 115px;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.heberg_legend{
+    margin: 2px 0px 0px 12px;
+    height: 80px;
+}
+
+.heberg_legend h1{
+    font-size: 14px;
+    margin: 0px 0px 5px 0px;  
+}
+
+.heberg_legend p{
+    margin: 0px 0px 5px 0px;  
+    font-size: 14px;
+}
+
+.heberg_star{
+    letter-spacing: -1px;
+
+}
+
+.etoile_pleine{
+    color: #0065fc;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.etoile_vide{
+    color: #f2f2f2;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.afficher{
+    margin: 15px 0px 30px 20px;
+}
+
+.afficher a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*---Section les plus populaires--*/
+
+
+.heberg_pop{
+    width: 380px;
+    padding: 20px;
+    background-color: #f2f2f2; 
+    border-radius: 15px;
+}
+
+.pop_titre{
+    margin: 23px 20px 25px 20px;
+}
+
+.pop_titre h1{
+    font-size: 23px;
+}
+
+.pop_titre i{
+    float: right;
+}
+
+.pop_bloc{
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pop_hotel{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    box-shadow: 0 0 20px #0000002e;
+    width: 95%;
+    max-width: 335px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    height: 135px;
+    margin: 0px auto;
+    color: inherit;
+    text-decoration: none;
+}
+
+.imgpop{
+    height:100%;
+    max-width: 150px;
+}
+
+.pop_hotel img{
+    height: 100%;
+    width: 120px;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+}
+.pop_legend{
+    margin: 0px 17px 0px 18px;
+    height: 100%;
+    min-width: 140px;
+}
+
+.pop_legend h1{
+    font-size: 16px;
+    margin: 10px 0px 5px 0px;  
+}
+
+.pop_legend p{
+    margin: 0px 0px 5px 0px;  
+    font-size: 14px;
+}
+
+.pop_legendtext{
+    height: 100px;
+}
+
+.pop_star{
+    margin: 40px 0px 5px 0px;
+}
+
+.pop_star .etoile_pleine{
+    color: #0065fc;
+    margin-bottom: 0px;
+    font-size: 11px;
+    letter-spacing: -3px;
+}
+
+.etoile_vide{
+    color: #f2f2f2;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+/*- Activités -*/
+
+
+.activ_titre h1{
+    margin: 60px 0px 0px 0px;
+    font-size: 23px;
+}
+
+
+.activ{
+   display: grid;
+   column-gap: 2.7%;
+   margin: 20px 0px 0px 0px;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: 200px 40px 45px 165px;
+}
+
+.activ a{
+   text-decoration: none;
+   color: inherit;
+}
+
+
+.activ_bloc{    
+   box-shadow: 0 0 20px #0000002e;
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   overflow: hidden;
+   width: 100%;
+}
+
+.activ_fig{  
+   flex: 1;
+   position: relative;
+}
+
+.activ_img {
+   width: 100%;
+   max-width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px 5px 0px 0px;
+   position: absolute;
+}
+
+.activ_legend{
+   height: 50px;
+   padding: 0px 0px 0px 7%;
+}
+
+.activ_legend p{
+   font-size: 16px; 
+   margin: 5px 0px;
+}
+
+.Vieux_Port {
+   grid-row: 1/5;
+   grid-column: 1/2;
+}
+
+.Fort {  
+   grid-row: 1/3;
+   grid-column: 2/3;
+}
+
+.Frioul{
+   grid-row: 4/5;
+   grid-column: 2/3;
+}
+
+.Calanques{
+   grid-row: 1/5;
+   grid-column: 3/4;
+
+}
+.Dame{
+   grid-row: 1/2;
+   grid-column: 4/5;
+}
+
+.Parc{
+   grid-row: 3/5;
+   grid-column: 4/5;
+}
+
+/*- Bas de page-*/
+
+
+.basdepage{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.basdepage_col{
+    margin-right: auto;
+}
+
+.basdepage a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.basdepage h3{
+    margin-left: 40px;
+}
+
+.basdepage li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+/*- Mise en page entre 1000px et 1130px -*/
+
+
+@media (min-width: 1001px) and (max-width: 1130px)
+{
+    
+
+    /*- Hébergements -*/
+
+    #heberg{
+        flex-direction: column;
+    }
+
+    .heberg_marseille{
+        order: 2;
+        max-width: inherit;
+        width: 95%;
+        padding: 20px;
+    }
+    
+    
+    .heberg_legend h1{
+        font-size: 16px;
+        margin: 0px 0px 5px 0px;  
+    }
+    
+ 
+    .afficher{
+        margin: 15px 0px 20px 20px;
+    }
+
+
+    /*- Bloc populaire -*/
+
+
+    .heberg_pop{
+        order: 1;
+        width: 95%;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+
+
+    .pop_bloc{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        height: auto;
+        justify-content: space-around;
+        padding: 0px 0px 20px 0px;
+    }
+    
+    .pop_hotel{
+        min-width: 200px;
+        max-width:300px;
+        width: auto;
+        margin: 0px 10px 0px 10px;
+        flex: 1 1 0;
+    }
+    
+   
+    .pop_legend{
+        margin: 0px 5px 0px 10px;
+        height: 100%;
+    }
+    
+    .pop_legend h1{
+        font-size: 14px;
+        margin: 10px 0px 5px 0px;  
+    }
+    
+    .pop_legend p{
+        margin: 0px 0px 5px 0px;  
+        font-size: 13px;
+    }
+    
+    .pop_legendtext{
+        height: 100px;
+    }
+    
+    .pop_star{
+        margin: 50px 0px 5px 0px;
+    }
+    
+  /* -Activités-*/
+
+
+    .activ{
+        display: grid;
+        column-gap: 40px;
+        row-gap: 20px;
+        margin: 30px 0px 10px 0px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 250px 250px;
+    }
+
+    .Vieux_Port {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .Fort {  
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .Frioul{
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+
+    .Calanques{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .Dame{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .Parc{
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+
+}
+
+/*- Mise en page entre 701px et 1000px -*/
+
+
+@media (min-width: 701px) and (max-width: 1000px) 
+{
+
+    /* -Taille du site-*/
+
+    .main{
+        margin: 10px;
+    }
+    
+    
+    /* -Hébergement-*/
+    
+  
+    
+    #heberg{
+        flex-direction: column;
+
+    }
+    
+    .heberg_marseille{
+        order: 2;
+        max-width: inherit;
+        padding: 0px 30px 0px 30px;
+        border-radius: inherit;
+        margin-right: 0px;
+    }
+
+    .heberg_titre{
+        margin: 30px 0px 25px 0px;
+    }
+
+    
+    .heberg_hotel{
+        max-width:400px;
+        min-width: 200px;
+        width: 40%;
+        margin: 0px 0px 30px 0px;
+    }
+    
+    .afficher{
+        margin: 20px 0px 20px 0px;
+    }
+    
+
+    /* -Bloc populaire-*/
+
+
+    .heberg_pop{
+        order: 1;
+        width:100%;
+        padding: inherit;
+        border-radius: inherit;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0px 0px 40px 0px;
+    }
+
+
+    .pop_bloc{
+        align-items: center;
+        height: 600px;
+        padding: 0px 30px 20px 30px;
+    }
+    
+    .pop_hotel{
+        min-width: 200px;
+        max-width:800px;
+        width: 100%;
+        height: 160px;
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .imgpop{
+        height:100%;
+        max-width: 300px;
+    }
+    
+    .pop_hotel img{
+        height: 100%;
+        width: 100%;
+        max-width: 300px;
+    }
+    .pop_legend{
+        margin: 0px 10px 0px 18px;
+        height: 100%;
+        width: 280px;
+    }
+    
+    .pop_legend h1{
+        font-size: 14px;
+        margin: 10px 0px 5px 0px;  
+    }
+    
+    .pop_legend p{
+        margin: 0px 0px 5px 0px;  
+        font-size: 14px;
+    }
+    
+    .pop_legendtext{
+        height: 100px;
+    }
+    
+    .pop_star{
+        margin: 70px 0px 5px 0px;
+    }
+    
+    .pop_star .etoile_pleine{
+        color: #0065fc;
+        margin-bottom: 0px;
+        font-size: 11px;
+        letter-spacing: -3px;
+    }
+    
+    .etoile_vide{
+        color: #f2f2f2;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+
+
+    /* -Activités-*/
+
+    .activ{
+        display: grid;
+        column-gap: 40px;
+        row-gap: 20px;
+        margin: 30px 0px 10px 0px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 180px 180px 180px;
+    }
+
+    .activ_legend{
+        height: 40px;
+        padding: 15px 0px 0px 7%;
+    }
+ 
+    .activ_legend p{
+        font-size: 16px; 
+        margin: 5px 0px;
+    }
+    
+    .Vieux_Port {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    
+    .Fort {  
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    
+    .Frioul{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    .Calanques{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    
+    }
+    .Dame{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    
+    .Parc{
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+}
+
+/*- Mise en page entre 250px et 700px -*/
+
+
+@media (max-width: 700px) 
+{
+
+    .main{
+        margin: 0px;
+    }
+    
+    /* -En tete-*/
+
+
+    header{
+        padding-top: inherit;
+        margin: 0px 0px 30px 0px;
+        }
+
+    .logo{
+        order: 1;
+        margin: 30px 0px 0px 20px;
+        }
+
+    .navigation{
+        order:3;
+        display: flex; 
+        justify-content: center;
+        width:100%;
+        padding: 0px 0px 15px 0px;
+    }
+
+    .nav_elt{
+        border-bottom: 2px solid #f2f2f2;
+        flex:1;
+        margin: 20px 0px 0px 0px;
+        text-align: center;
+        padding: inherit;
+    }
+
+    .nav_elt:hover{ 
+        flex:1;
+        text-align: center;
+        border-top: inherit;
+        padding: inherit;
+        border-bottom: 2px solid #0065fc;
+    }
+
+    .inscription{
+        order: 2;
+        margin: 30px 20px 0px 0px;
+    }
+    
+
+    /* -Titre Trouvez-*/
+
+
+    .trouvez h1{
+        font-size: 22px;
+        margin: 0px 20px 10px 20px;
+    }
+    
+    .trouvez p{
+        margin: 10px 0px 0px 20px;
+    }
+
+
+    /* -Barre de recherche-*/
+
+
+    .BoutonRech{
+        margin: 20px 0px 0px 20px;
+    }
+
+    .Bouton1{
+        border-radius: 15px 15px 15px 15px;
+        width: 50px;
+        position: relative;
+        margin-left: -10px;
+    }
+
+    .rechercher{
+        display: none;
+    }
+
+    .loupe{
+        display: inline;
+        font-size:17px;
+    }
+
+
+    /* -Filtres-*/
+
+
+    .Filtres {
+        margin: 30px 0px 0px 20px;
+    }
+
+    .titre_filtres {
+        width: 100%;
+    }
+
+    .bouton_filtres {
+        margin: 0px 9px 15px 0px;
+    }
+
+    .bouton_filtres:hover{
+        margin: 0px 10px 15px 0px;
+    }
+
+    .Droite_filtres{
+        padding: 0px 12px;
+    }
+
+    .texte_filtres{
+        font-size: 15px;
+    }
+
+    /* -Hébergements-*/
+
+    
+    #heberg{
+        flex-direction: column;
+    }
+
+     .heberg_marseille{
+        order: 2;
+        max-width: inherit;
+        padding: 0px 20px 0px 20px;
+        border-radius: inherit;
+        margin-right: 0px;
+        background-color: #ffffff;
+    }
+
+    .heberg_titre{
+        margin: 0px 0px 20px 0px;
+    }
+    
+    .heberg_hotel{
+       
+        max-width: 600px;
+        min-width: 250px;
+        width: 100%;
+        height: 190px;
+        border-radius: 15px;
+        background-color: #ffffff;
+        margin: 0px 0px 10px 0px;  
+    }
+    
+    .heberg_hotel img{
+        max-height: 115px;
+        width: 100%;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+    }
+    
+    .heberg_legend{
+        margin: 2px 0px 0px 12px;
+        height: 80px;
+    }
+    
+    .heberg_legend h1{
+        font-size: 16px;
+        margin: 0px 0px 5px 0px;  
+    }
+    
+    .heberg_legend p{
+        margin: 0px 0px 5px 0px;  
+        font-size: 14px;
+    }
+    
+    .heberg_star{
+        letter-spacing: -1px;
+    
+    }
+    
+    .etoile_pleine{
+        color: #0065fc;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    
+    .etoile_vide{
+        color: #f2f2f2;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    
+    .afficher{
+        margin: 15px 0px 20px 0px;
+    }
+    
+    .afficher a{
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    /* -Bloc populaire-*/
+
+
+    .pop_titre{
+        margin: 40px 25px 25px 25px;
+    }
+
+    .heberg_pop{
+        order: 1;
+        width:100%;
+        padding: inherit;
+        border-radius: inherit;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0px 0px 40px 0px;
+    }
+
+
+    .pop_bloc{
+        height: 450px;
+        align-items: center;
+        padding: 0px 20px 40px 20px;
+    }
+    
+    .pop_hotel{
+        min-width: 200px;
+        max-width:600px;
+        width: 100%;
+        height: 130px;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .imgpop{
+        height:100%;
+        max-width: 300px;
+        width: 40%;
+    }
+    
+    .pop_hotel img{
+        height: 100%;
+        width: 100%;
+        max-width: 300px;
+    }
+    .pop_legend{
+        margin: 0px 10px 0px 20px;
+        height: 100%;
+        width: 300px;
+    }
+    
+    .pop_legend h1{
+        font-size: 14px;
+        margin: 10px 0px 5px 0px;  
+    }
+    
+    .pop_legend p{
+        margin: 0px 0px 5px 0px;  
+        font-size: 14px;
+    }
+    
+    .pop_legendtext{
+        height: 100px;
+    }
+    
+    .pop_star{
+        margin: 50px 0px 5px 0px;
+    }
+    
+    .pop_star .etoile_pleine{
+        color: #0065fc;
+        margin-bottom: 0px;
+        font-size: 11px;
+        letter-spacing: -3px;
+    }
+    
+    .etoile_vide{
+        color: #f2f2f2;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+
+    /* -Activités-*/
+
+
+    .activ_titre h1{
+        margin: 30px 0px 30px 20px;
+        font-size: 23px;
+    }
+
+    .activ{
+        row-gap: 23px;
+        margin: 0px 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 190px);
+    }
+
+    .activ_legend{
+        height: 40px;
+        padding: 15px 0px 0px 7%;
+    }
+     
+     .activ_legend p{
+        font-size: 16px; 
+        margin: 5px 0px;
+    }
+    
+    .Vieux_Port {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    
+    .Fort {  
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    .Frioul{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    
+    .Calanques{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    
+    }
+    .Dame{
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+    
+    .Parc{
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+
+    /* -Bas de page-*/
+
+
+    .basdepage{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+}
+    
+
+
+
