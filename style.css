@@ -110,6 +110,14 @@ header{
     cursor: pointer;
 }
 
+.Bouton1:hover {
+    background-color: #0400fc;
+}
+
+.Bouton1:focus {
+    outline:0;
+}
+
 .rechercher{
     font-weight: bold;
     font-size: 17px;
@@ -147,6 +155,15 @@ header{
     z-index: 2;
 }
 
+.bouton_filtres:hover{
+    background-color: #a7d3f7ef;
+    margin: 0px 20px 15px 0px;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-radius: 40px;
+    text-align: center;
+}
+
 .icone_filtres{
     color: #0065fc;
     background-color: #deebff;
@@ -169,19 +186,14 @@ header{
     z-index: 1;
 }
 
+.Droite_filtres:focus {
+    outline:0;
+}
+
 .texte_filtres{
     color:black;
     font-weight: bold;
     font-size: 18px;
-}
-
-.bouton_filtres:hover{
-    background-color: #a7d3f7ef;
-    margin: 0px 20px 15px 0px;
-    height: 46px;
-    border: 2px solid #f2f2f2;
-    border-radius: 40px;
-    text-align: center;
 }
 
 
