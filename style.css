@@ -282,7 +282,7 @@ header{
     height: 80px;
 }
 
-.heberg_legend h1{
+.heberg_legend h3{
     font-size: 14px;
     margin: 0px 0px 5px 0px;  
 }
@@ -384,8 +384,8 @@ header{
     position:relative;
 }
 
-.pop_legend h1{
-    font-size: 16px;
+.pop_legend h3{
+    font-size: 14px;
     margin: 10px 0px 5px 0px;  
 }
 
@@ -520,8 +520,9 @@ header{
     text-decoration: none;
 }
 
-.basdepage h3{
+.basdepage h2{
     margin-left: 40px;
+    font-size: 19px;
 }
 
 .basdepage li{
@@ -542,6 +543,10 @@ header{
         flex-direction: column;
     }
 
+    .heberg_titre{
+        margin: 15px 0px 25px 10px;
+    }
+
     .heberg_marseille{
         order: 2;
         max-width: inherit;
@@ -549,8 +554,8 @@ header{
         padding: 20px;
     }
     
-    .heberg_legend h1{
-        font-size: 16px;
+    .heberg_legend h3{
+        font-size: 14px;
         margin: 0px 0px 5px 0px;  
     }
     
@@ -567,6 +572,10 @@ header{
         flex-direction: column;
         justify-content: flex-start;
         margin-bottom: 40px;
+    }
+
+    .pop_titre{
+        margin: 15px 0px 25px 10px;
     }
 
     .pop_bloc{
@@ -591,7 +600,7 @@ header{
         height: 100%;
     }
     
-    .pop_legend h1{
+    .pop_legend h3{
         font-size: 14px;
         margin: 10px 0px 5px 0px;  
     }
@@ -669,6 +678,11 @@ header{
         width: 40%;
         margin: 0px 0px 30px 0px;
     }
+
+    .heberg_legend h3{
+        font-size: 16px;
+        margin: 0px 0px 5px 0px;  
+    }
     
     .afficher{
         margin: 20px 0px 20px 0px;
@@ -717,8 +731,8 @@ header{
         width: 280px;
     }
     
-    .pop_legend h1{
-        font-size: 14px;
+    .pop_legend h3{
+        font-size: 16px;
         margin: 10px 0px 5px 0px;  
     }
     
@@ -934,7 +948,7 @@ header{
         height: 80px;
     }
     
-    .heberg_legend h1{
+    .heberg_legend h3{
         font-size: 16px;
         margin: 0px 0px 5px 0px;  
     }
@@ -1021,8 +1035,8 @@ header{
         width: 300px;
     }
     
-    .pop_legend h1{
-        font-size: 14px;
+    .pop_legend h3{
+        font-size: 16px;
         margin: 10px 0px 5px 0px;  
     }
     
