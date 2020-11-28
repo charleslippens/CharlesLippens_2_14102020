@@ -5,12 +5,14 @@
 	font-family: 'Raleway', "Sans serif";
 }
 
-/* -Taille du site*/
+
+/* -Largeur du site*/
 
 body{
     max-width: 1440px;
     margin: 0px auto;
 }
+
 
 /* -En tete-*/
 
@@ -49,7 +51,6 @@ header{
 
 /* -Main-*/
 
-
 .main{
     margin: 0px 50px;
 }
@@ -67,7 +68,6 @@ header{
 
 
 /* -Barre de recherche-*/
-
 
 .BoutonRech {
     display: flex;
@@ -121,7 +121,6 @@ header{
 
 
 /*--Filtres--*/
-
 
 .Filtres {
     display: flex;
@@ -216,7 +215,6 @@ header{
 
 /*--Hebergements marseille*/
 
-
 #heberg{
     display: flex;
     flex-direction: row;
@@ -235,7 +233,7 @@ header{
     border-radius: 15px;
     max-width: 846px;
     padding: 10px 17px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .heberg_bloc{
@@ -313,7 +311,6 @@ header{
 
 /*---Section les plus populaires--*/
 
-
 .heberg_pop{
     width: 380px;
     padding: 20px;
@@ -348,6 +345,7 @@ header{
     box-shadow: 0 0 20px #0000002e;
     width: 95%;
     max-width: 335px;
+    min-width: 290px;
     border-radius: 15px;
     background-color: #ffffff;
     height: 135px;
@@ -368,9 +366,10 @@ header{
     object-fit: cover;
 }
 .pop_legend{
-    margin: 0px 17px 0px 18px;
+    margin: 0px 15px 0px 15px;
     height: 100%;
     min-width: 140px;
+    position:relative;
 }
 
 .pop_legend h1{
@@ -388,30 +387,27 @@ header{
 }
 
 .pop_star{
-    margin: 40px 0px 5px 0px;
+    position: absolute;
+    bottom: 5px;
 }
 
 .pop_star .etoile_pleine{
     color: #0065fc;
-    margin-bottom: 0px;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: -3px;
 }
 
-.etoile_vide{
+.pop_star .etoile_vide{
     color: #f2f2f2;
-    margin-bottom: 0px;
     font-size: 12px;
 }
 
 /*- Activités -*/
 
-
 .activ_titre h1{
     margin: 60px 0px 0px 0px;
     font-size: 23px;
 }
-
 
 .activ{
    display: grid;
@@ -425,7 +421,6 @@ header{
    text-decoration: none;
    color: inherit;
 }
-
 
 .activ_bloc{    
    box-shadow: 0 0 20px #0000002e;
@@ -453,12 +448,14 @@ header{
 
 .activ_legend{
    height: 50px;
-   padding: 0px 0px 0px 7%;
+   padding: 0px 10px 0px 7%;
+   display: table; 
 }
 
 .activ_legend p{
    font-size: 16px; 
-   margin: 5px 0px;
+   display: table-cell;
+   vertical-align: middle;
 }
 
 .Vieux_Port {
@@ -491,8 +488,8 @@ header{
    grid-column: 4/5;
 }
 
-/*- Bas de page-*/
 
+/*- Bas de page-*/
 
 .basdepage{
     background-color: #f2f2f2;
@@ -542,20 +539,17 @@ header{
         padding: 20px;
     }
     
-    
     .heberg_legend h1{
         font-size: 16px;
         margin: 0px 0px 5px 0px;  
     }
     
- 
     .afficher{
         margin: 15px 0px 20px 20px;
     }
 
 
     /*- Bloc populaire -*/
-
 
     .heberg_pop{
         order: 1;
@@ -564,7 +558,6 @@ header{
         justify-content: flex-start;
         margin-bottom: 40px;
     }
-
 
     .pop_bloc{
         display: flex;
@@ -583,7 +576,6 @@ header{
         flex: 1 1 0;
     }
     
-   
     .pop_legend{
         margin: 0px 5px 0px 10px;
         height: 100%;
@@ -607,8 +599,8 @@ header{
         margin: 50px 0px 5px 0px;
     }
     
-  /* -Activités-*/
 
+  /* -Activités-*/
 
     .activ{
         display: grid;
@@ -651,26 +643,29 @@ header{
 
 }
 
+
 /*- Mise en page entre 701px et 1000px -*/
 
 
 @media (min-width: 701px) and (max-width: 1000px) 
 {
 
-    /* -Taille du site-*/
+
+    /* - Largeurs En tete et Main-*/
+
+    header{
+        margin: 0px 0px 30px 20px;
+    }
 
     .main{
-        margin: 10px;
+        margin: 20px;
     }
     
     
     /* -Hébergement-*/
-    
-  
-    
+       
     #heberg{
         flex-direction: column;
-
     }
     
     .heberg_marseille{
@@ -685,7 +680,6 @@ header{
         margin: 30px 0px 25px 0px;
     }
 
-    
     .heberg_hotel{
         max-width:400px;
         min-width: 200px;
@@ -700,7 +694,6 @@ header{
 
     /* -Bloc populaire-*/
 
-
     .heberg_pop{
         order: 1;
         width:100%;
@@ -710,7 +703,6 @@ header{
         justify-content: flex-start;
         margin: 0px 0px 40px 0px;
     }
-
 
     .pop_bloc{
         align-items: center;
@@ -763,7 +755,7 @@ header{
     .pop_star .etoile_pleine{
         color: #0065fc;
         margin-bottom: 0px;
-        font-size: 11px;
+        font-size: 12px;
         letter-spacing: -3px;
     }
     
@@ -787,7 +779,6 @@ header{
 
     .activ_legend{
         height: 40px;
-        padding: 15px 0px 0px 7%;
     }
  
     .activ_legend p{
@@ -826,28 +817,32 @@ header{
     }
 }
 
-/*- Mise en page entre 250px et 700px -*/
+
+/*- Mise en page entre 300px et 700px -*/
 
 
 @media (max-width: 700px) 
 {
 
+
+    /* -Largeur Main-*/
+
     .main{
         margin: 0px;
     }
     
-    /* -En tete-*/
 
+    /* -En tete-*/
 
     header{
         padding-top: inherit;
         margin: 0px 0px 30px 0px;
-        }
+    }
 
     .logo{
         order: 1;
         margin: 30px 0px 0px 20px;
-        }
+    }
 
     .navigation{
         order:3;
@@ -881,7 +876,6 @@ header{
 
     /* -Titre Trouvez-*/
 
-
     .trouvez h1{
         font-size: 22px;
         margin: 0px 20px 10px 20px;
@@ -894,7 +888,6 @@ header{
 
     /* -Barre de recherche-*/
 
-
     .BoutonRech{
         margin: 20px 0px 0px 20px;
     }
@@ -903,7 +896,7 @@ header{
         border-radius: 15px 15px 15px 15px;
         width: 50px;
         position: relative;
-        margin-left: -10px;
+        margin: 0px 20px 0px -10px;
     }
 
     .rechercher{
@@ -917,7 +910,6 @@ header{
 
 
     /* -Filtres-*/
-
 
     .Filtres {
         margin: 30px 0px 0px 20px;
@@ -945,7 +937,6 @@ header{
 
     /* -Hébergements-*/
 
-    
     #heberg{
         flex-direction: column;
     }
@@ -1024,8 +1015,8 @@ header{
         font-size: 18px;
     }
     
-    /* -Bloc populaire-*/
 
+    /* -Bloc populaire-*/
 
     .pop_titre{
         margin: 40px 25px 25px 25px;
@@ -1094,7 +1085,7 @@ header{
     .pop_star .etoile_pleine{
         color: #0065fc;
         margin-bottom: 0px;
-        font-size: 11px;
+        font-size: 12px;
         letter-spacing: -3px;
     }
     
@@ -1104,8 +1095,8 @@ header{
         font-size: 12px;
     }
 
-    /* -Activités-*/
 
+    /* -Activités-*/
 
     .activ_titre h1{
         margin: 30px 0px 30px 20px;
@@ -1121,7 +1112,6 @@ header{
 
     .activ_legend{
         height: 40px;
-        padding: 15px 0px 0px 7%;
     }
      
      .activ_legend p{
@@ -1169,6 +1159,3 @@ header{
 
 }
     
-
-
-
