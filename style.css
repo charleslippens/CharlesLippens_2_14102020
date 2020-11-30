@@ -234,11 +234,6 @@ header{
     width: 100%;
 }
 
-.heberg_titre{
-    margin: 33px 0px 25px 20px;
-    font-size: 23px;
-}
-
 .heberg_marseille{
     height: auto;
     background-color: #f2f2f2;
@@ -246,6 +241,11 @@ header{
     max-width: 846px;
     padding: 10px 17px;
     margin-right: 20px;
+}
+
+.heberg_titre{
+    margin: 33px 0px 25px 20px;
+    font-size: 23px;
 }
 
 .heberg_bloc{
@@ -294,7 +294,6 @@ header{
 
 .heberg_star{
     letter-spacing: -1px;
-
 }
 
 .etoile_pleine{
@@ -433,6 +432,30 @@ header{
                         "Port Frioul Calanques Parc";
 }
 
+.Port {
+    grid-area: Port;
+ }
+ 
+ .Fort {  
+    grid-area: Fort;
+ }
+ 
+ .Frioul{
+    grid-area: Frioul;
+ }
+ 
+ .Calanques{
+    grid-area: Calanques;
+ 
+ }
+ .Dame{
+    grid-area: Dame;
+ }
+ 
+ .Parc{
+    grid-area: Parc;
+ }
+
 .activ a{
    text-decoration: none;
    color: inherit;
@@ -442,9 +465,8 @@ header{
    box-shadow: 0 0 20px #0000002e;
    border-radius: 20px;
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-start;
    flex-direction: column;
-   overflow: hidden;
    width: 100%;
 }
 
@@ -458,7 +480,7 @@ header{
    max-width: 100%;
    height: 100%;
    object-fit: cover;
-   border-radius: 5px 5px 0px 0px;
+   border-radius: 20px 20px 0px 0px;
    position: absolute;
 }
 
@@ -472,30 +494,6 @@ header{
    font-size: 16px; 
    display: table-cell;
    vertical-align: middle;
-}
-
-.Port {
-   grid-area: Port;
-}
-
-.Fort {  
-   grid-area: Fort;
-}
-
-.Frioul{
-   grid-area: Frioul;
-}
-
-.Calanques{
-   grid-area: Calanques;
-
-}
-.Dame{
-   grid-area: Dame;
-}
-
-.Parc{
-   grid-area: Parc;
 }
 
 
@@ -569,8 +567,6 @@ header{
     .heberg_pop{
         order: 1;
         width: 95%;
-        flex-direction: column;
-        justify-content: flex-start;
         margin-bottom: 40px;
     }
 
@@ -592,21 +588,15 @@ header{
         max-width:300px;
         width: auto;
         margin: 0px 10px 0px 10px;
-        flex: 1 1 0;
+        flex: 1;
     }
     
     .pop_legend{
         margin: 0px 5px 0px 10px;
         height: 100%;
     }
-    
-    .pop_legend h3{
-        font-size: 14px;
-        margin: 10px 0px 5px 0px;  
-    }
-    
+      
     .pop_legend p{
-        margin: 0px 0px 5px 0px;  
         font-size: 13px;
     }
     
@@ -631,7 +621,6 @@ header{
         grid-template-areas: "Port      Fort   Frioul"
                              "Calanques Dame   Parc  ";
     }
-
 
 }
 
@@ -696,8 +685,6 @@ header{
         width:100%;
         padding: inherit;
         border-radius: inherit;
-        flex-direction: column;
-        justify-content: flex-start;
         margin: 0px 0px 40px 0px;
     }
 
@@ -733,35 +720,12 @@ header{
     
     .pop_legend h3{
         font-size: 16px;
-        margin: 10px 0px 5px 0px;  
-    }
-    
-    .pop_legend p{
-        margin: 0px 0px 5px 0px;  
-        font-size: 14px;
-    }
-    
-    .pop_legendtext{
-        height: 100px;
     }
     
     .pop_star{
         margin: 70px 0px 5px 0px;
     }
     
-    .pop_star .etoile_pleine{
-        color: #0065fc;
-        margin-bottom: 0px;
-        font-size: 12px;
-        letter-spacing: -3px;
-    }
-    
-    .etoile_vide{
-        color: #f2f2f2;
-        margin-bottom: 0px;
-        font-size: 12px;
-    }
-
 
     /* -Activités-*/
 
@@ -926,26 +890,11 @@ header{
     }
     
     .heberg_hotel{
-       
         max-width: 600px;
         min-width: 250px;
         width: 100%;
         height: 190px;
-        border-radius: 15px;
-        background-color: #ffffff;
         margin: 0px 0px 10px 0px;  
-    }
-    
-    .heberg_hotel img{
-        max-height: 115px;
-        width: 100%;
-        border-radius: 15px 15px 0px 0px;
-        object-fit: cover;
-    }
-    
-    .heberg_legend{
-        margin: 2px 0px 0px 12px;
-        height: 80px;
     }
     
     .heberg_legend h3{
@@ -956,23 +905,6 @@ header{
     .heberg_legend p{
         margin: 0px 0px 5px 0px;  
         font-size: 14px;
-    }
-    
-    .heberg_star{
-        letter-spacing: -1px;
-    
-    }
-    
-    .etoile_pleine{
-        color: #0065fc;
-        margin-bottom: 0px;
-        font-size: 12px;
-    }
-    
-    .etoile_vide{
-        color: #f2f2f2;
-        margin-bottom: 0px;
-        font-size: 12px;
     }
     
     .afficher{
@@ -998,11 +930,8 @@ header{
         width:100%;
         padding: inherit;
         border-radius: inherit;
-        flex-direction: column;
-        justify-content: flex-start;
         margin: 0px 0px 40px 0px;
     }
-
 
     .pop_bloc{
         height: 450px;
@@ -1037,12 +966,6 @@ header{
     
     .pop_legend h3{
         font-size: 16px;
-        margin: 10px 0px 5px 0px;  
-    }
-    
-    .pop_legend p{
-        margin: 0px 0px 5px 0px;  
-        font-size: 14px;
     }
     
     .pop_legendtext{
@@ -1054,16 +977,11 @@ header{
     }
     
     .pop_star .etoile_pleine{
-        color: #0065fc;
         margin-bottom: 0px;
-        font-size: 12px;
-        letter-spacing: -3px;
     }
     
-    .etoile_vide{
-        color: #f2f2f2;
+    .pop_star .etoile_vide{
         margin-bottom: 0px;
-        font-size: 12px;
     }
 
 
